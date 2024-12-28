@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: set postgresql db
+    apt:
+      name: postgresql
+      state: present
